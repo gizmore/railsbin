@@ -1,0 +1,23 @@
+<% content_for :head do %>
+<script>hljs.initHighlightingOnLoad();</script>
+<% end %>
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @paste.user_id %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @paste.title %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <pre><code><%= @paste.content %></code></pre>
+</p>
+
+<%= link_to 'Edit', edit_paste_path(@paste) %> |
+<%= link_to 'Back', pastes_path %>

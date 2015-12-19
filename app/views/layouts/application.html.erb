@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Railsbin</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag "highlight.pack" %>
+  <%= yield :head %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div class="page">
+    <%= render 'layouts/header' %>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+    <div class="content">
+      <%= yield %>
+    </div>
+  </div>
+  <%= render 'layouts/footer' %>
+</body>
+</html>

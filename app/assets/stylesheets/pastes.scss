@@ -1,0 +1,7 @@
+// Place all the styles related to the Pastes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+div.new-paste-content, div.new-paste-content textarea {
+  width: 100%;
+  min-height: 640px;
+}
