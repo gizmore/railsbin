@@ -5,6 +5,7 @@ class UsersController < ApplicationController
   # GET /users.json
   def index
     @users = User.all
+    @users.map {|u| u.password = u.encrypted_password }
   end
 
   # GET /users/1
