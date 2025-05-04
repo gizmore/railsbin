@@ -11,9 +11,9 @@ default: &default
 
 development:
   <<: *default
-  database: railways
-  username: railways
-  password: railways
+  database: railsbin_dev
+  username: railsbin_dev
+  password: railsbin_dev
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
