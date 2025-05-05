@@ -22,3 +22,4 @@ are welcome.
 + SPAM Detection
 + User roles
 + Permissions
++ Pagination
