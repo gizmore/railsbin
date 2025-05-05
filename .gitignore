@@ -35,3 +35,4 @@
 # The next line has a comment above
 
 public/assets
+config/master.key
