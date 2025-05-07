@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
-  devise_for :users, :controllers => { registrations: 'registrations' }
+  devise_for :users, :controllers => {
+    registrations: 'registrations',
+    confirmations: 'confirmations',
+    sessions: 'sessions',
+    passwords: 'passwords',
+    unlocks: 'unlocks',
+  }
   resources :roles
   resources :pastes
   resources :users

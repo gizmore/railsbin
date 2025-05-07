@@ -19,6 +19,7 @@
   <% end -%>
 
   <div class="actions">
+    <%= render "devise/shared/recaptcha", action: "login" %>
     <%= f.submit "Log in" %>
   </div>
 <% end %>

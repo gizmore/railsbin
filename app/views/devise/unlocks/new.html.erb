@@ -9,6 +9,7 @@
   </div>
 
   <div class="actions">
+    <%= render "devise/shared/recaptcha", action: "password_reset" %>
     <%= f.submit "Resend unlock instructions" %>
   </div>
 <% end %>

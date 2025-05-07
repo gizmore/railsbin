@@ -49,3 +49,5 @@ gem "strip_attributes"
 gem 'devise'
 gem 'cancancan'
 gem 'json'
+
+gem 'recaptcha'

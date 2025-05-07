@@ -1,4 +1,11 @@
+require 'recaptcha_helper.rb'
+
 class RegistrationsController < Devise::RegistrationsController
+  include RecaptchaHelper
+
+  prepend_before_action only: :create do
+    check_recaptcha('signup')
+  end
 
   private
 

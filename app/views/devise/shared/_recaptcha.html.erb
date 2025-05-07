@@ -1,0 +1,6 @@
+<div style="color:red"><%= flash[:recaptcha_error] %></div>
+<% if @show_checkbox_recaptcha %>
+    <%= recaptcha_tags(site_key: Rails.application.credentials.recaptcha_v2.site_key) %>
+<% else %>
+  <%= recaptcha_v3(action: action) %>
+<% end %>

@@ -9,8 +9,9 @@
   </div>
 
   <div class="actions">
+    <%= render "devise/shared/recaptcha", action: "password_reset" %>
     <%= f.submit "Resend confirmation instructions" %>
   </div>
 <% end %>
 
-<%= render "devise/shared/links" %>
+<%= render "devise/shared/links", action: 'foo' %>
